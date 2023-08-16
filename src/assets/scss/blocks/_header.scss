@@ -1,0 +1,224 @@
+.header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+
+  @include breakpoint($xl-bp) {
+    &._active {
+      .header__wrapper {
+        background-color: $green;
+      }
+    }
+  }
+
+  &._min {
+    margin-bottom: 6rem;
+
+    @include breakpoint($xl-bp) {
+      margin-bottom: 4rem;
+    }
+
+    .header__wrapper {
+      padding: 3rem 0;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+
+      @include breakpoint($xl-bp) {
+        padding: 1rem 0rem 1rem;
+      }
+    }
+  }
+
+  &__wrapper {
+    background-color: $light;
+    padding: 6rem 0;
+    transition: 0.3s;
+
+    @include breakpoint($xl-bp) {
+      padding: 2rem 0rem 4rem;
+      transition: 0.3s;
+    }
+  }
+
+  &__container {
+    padding: 0rem 8rem 0rem 22.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($xl-bp) {
+      padding: 0rem 1.5rem;
+    }
+  }
+
+  &__logo {
+    flex: none;
+    height: 4rem;
+    width: 27.6rem;
+    transition: 0.3s;
+
+    @include breakpoint($xl-bp) {
+      width: 14.3rem;
+      height: 2rem;
+    }
+
+    &:hover {
+      svg {
+        fill: $green;
+      }
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 9.5rem;
+
+    @include breakpoint($xl-bp) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      height: calc(100vh - 100%);
+      width: 100%;
+      background-color: $green;
+      padding: 3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+      overflow: auto;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+
+      &._active {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+
+    @include breakpoint($sm-bp) {
+      padding-top: 1rem;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      @include breakpoint($xl-bp) {
+        flex-wrap: wrap;
+      }
+
+      @include breakpoint($sm-bp) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.5rem;
+      }
+
+      &__link {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        @include breakpoint($xl-bp) {
+          color: $white;
+        }
+
+        &:first-child {
+          color: $green;
+
+          @include breakpoint($xl-bp) {
+            color: $white;
+          }
+        }
+
+        &:hover {
+          color: $green;
+          opacity: 0.5;
+
+          @include breakpoint($xl-bp) {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-soucial {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+
+      @include breakpoint($sm-bp) {
+        margin-top: auto;
+      }
+
+      &__link {
+        width: 3.2rem;
+        height: 3.2rem;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: $green;
+
+          @include breakpoint($xl-bp) {
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &-menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: none;
+
+    @include breakpoint($xl-bp) {
+      display: flex;
+
+      &._active {
+        svg {
+          &:nth-child(1) {
+            transform: scale(0);
+          }
+          &:nth-child(2) {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      fill: $green;
+      transition: 0.3s;
+
+      &:nth-child(2) {
+        transform: scale(0);
+        fill: $white;
+      }
+    }
+  }
+}

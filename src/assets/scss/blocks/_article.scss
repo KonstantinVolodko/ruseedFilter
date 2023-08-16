@@ -1,0 +1,91 @@
+.article-text {
+    padding: 10rem 53rem 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    @include breakpoint($xl-bp) {
+        padding: 5rem 1.5rem 5rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding: 3rem 1.5rem 3rem;
+        gap: 1rem;
+    }
+
+
+    h1 {
+        color: #2D2B27;
+        font-family: Milligram;
+        font-size: 7.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 91.5%;
+        text-transform: uppercase;
+        margin-bottom: 8rem;
+        @include breakpoint($xl-bp) {
+            margin-bottom: 0rem;
+            font-size: 5.2rem;
+        }
+
+        @include breakpoint($sm-bp) {
+            font-size: 3.6rem;
+        }
+    }
+
+    svg {
+        position: absolute;
+        left: 40rem;
+        top: 11rem;
+        width: 10rem;
+        height: 10rem;
+
+        @include breakpoint($xl-bp) {
+            display: none;
+        }
+    }
+
+    p {
+        color: #000;
+        font-family: Milligram;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @include breakpoint($sm-bp) {
+            font-size: 1.6rem;
+        }
+    }
+
+    p:nth-of-type(odd) {
+        font-weight: 500;
+        line-height: 113.5%;
+    }
+
+    .article-text__img {
+        width: 100%;
+        height: 42rem;
+
+        @include breakpoint($sm-bp) {
+            height: 30rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.article {
+    .info-info__container {
+        padding: 0 9.6rem 0 0;
+    }
+
+    .main-question-list {
+        column-gap: 24.5rem;
+    }
+}

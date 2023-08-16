@@ -1,0 +1,17 @@
+.agro {
+  &-top {
+    background: linear-gradient(90deg, #1b3505 0%, rgba(0, 0, 0, 0) 100%),
+      url("../images/agro-top.jpg") center / cover no-repeat;
+    margin-bottom: 18rem;
+
+    @include breakpoint($xl-bp) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &-info {
+    .about-info__title {
+      max-width: 64.5rem;
+    }
+  }
+}

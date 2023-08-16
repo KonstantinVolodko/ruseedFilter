@@ -1,0 +1,533 @@
+<section class="career-new">
+    <div class="main-top career-top">
+        <div class="main-top__container">
+
+            <h1 class="main-top__title">КАРЬЕРА</h1>
+            <p class="main-top__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+            </p>
+            <button type="button" class="default-link default-link_white main-top__link" data-open-career>
+                Отправить резюме
+            </button>
+
+        </div>
+    </div>
+
+    <div class="career-info">
+        <h3 class="career-info__title">О компании</h3>
+
+        <div class="career-info__text">
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo
+                enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos
+                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                aliquam
+                quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                laboriosam,
+                nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+                velit
+                esse
+                quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+            </p>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo
+                enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos
+                qui ratione voluptatem sequi nesciunt.
+            </p>
+        </div>
+    </div>
+
+    <div class="career-new__form-container">
+        <form action="#" class="main-info-top main-info-form" data-send>
+            <div class="main-info-top__inner">
+                <h4 class="main-info__title">
+                    Актуальные вакансии
+                </h4>
+            </div>
+
+            <div class="main-info-form__container">
+                <div class="main-info-form__inner">
+                    <!-- <div class="select main-info-form-select region-select-container">
+                        <input type="text" class="select__value main-info-form-select__value">
+                        <button type="button" class="select__btn main-info-form-select__btn main-info-form__input">
+                            <span>Регион</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="main-info-form-select-content">
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-1">Бразилия</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-2">Россия</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-3">Индия</button>
+                        </div>
+                    </div>
+
+                    <div class="select main-info-form-select">
+                        <input type="text" class="select__value main-info-form-select__value">
+                        <button type="button" class="select__btn main-info-form-select__btn main-info-form__input">
+                            <span>Город</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="main-info-form-select-content">
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-1">Москва</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-2">Питер</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-3">Уфа</button>
+                        </div>
+                    </div> -->
+
+                    <div class="custom-select main-info-form-select">
+                        <select class="my-select" id="country-select">
+                            <option value="Все регионы">Все регионы</option>
+                            <option value="Россия">Россия</option>
+                            <option value="Индия">Индия</option>
+                            <option value="Бразилия">Бразилия</option>
+                        </select>
+                        <span class="main-info-form-select__btn main-info-form__input">
+                            <span class="select__btn">Регион</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </span>
+                        <ul class="main-info-form-select-content">
+                            <li data-value="Все регионы" data-country="">Все регионы</li>
+                            <li data-value="Россия" data-country="Russia">Россия</li>
+                            <li data-value="Индия" data-country="India">Индия</li>
+                            <li data-value="Бразилия" data-country="Brazil">Бразилия</li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-select main-info-form-select">
+                        <select class="my-select" id="city-select">
+                            <option value="Все города">Все города</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Питер">Питер</option>
+                            <option value="Сан паулу">Сан паулу</option>
+                        </select>
+                        <span class="main-info-form-select__btn main-info-form__input">
+                            <span class="select__btn">Город</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </span>
+                        <ul class="main-info-form-select-content">
+                            <li data-value="Все города" data-country="">Все города</li>
+                            <li data-value="Москва" data-country="Russia">Москва</li>
+                            <li data-value="Питер" data-country="Russia">Питер</li>
+                            <li data-value="Сан паулу" data-country="Brazil">Сан паулу</li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-select main-info-form-select">
+                        <select class="my-select" id="profession-select">
+                            <option value="Все профессии">Все профессии</option>
+                            <option value="Инженер">Инженер</option>
+                            <option value="Грузчик">Грузчик</option>
+                            <option value="Охранник">Охранник</option>
+                        </select>
+                        <span class="main-info-form-select__btn main-info-form__input">
+                            <span class="select__btn">Профессиональная область</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </span>
+                        <ul class="main-info-form-select-content">
+                            <li data-value="Все профессии">Все профессии</li>
+                            <li data-value="Инженер">Инженер</li>
+                            <li data-value="Грузчик">Грузчик</li>
+                            <li data-value="Охранник">Охранник</li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="select main-info-form-select profession-select-container">
+                        <input type="text" class="select__value main-info-form-select__value">
+                        <button type="button" class="select__btn main-info-form-select__btn main-info-form__input">
+                            <span>Профессиональная область</span>
+                            <svg>
+                                <use href="#link-icon"></use>
+                            </svg>
+                        </button>
+                        <div class="main-info-form-select-content">
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-1">Инженер</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-2">Грузчик</button>
+                            <button type="button" class="select__item main-info-form-select-content__btn"
+                                data-value="value-3">Охранник</button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <button class="default-link main-info-form__btn" id="filter-btn">Показать</button>
+            </div>
+        </form>
+
+        <div class="main-question-list">
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">01</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Бразилия</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Сан паулу</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Инженер</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">02</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Россия</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Москва</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Грузчик</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">03</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Московская обл.</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Москва</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Агрономия</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">04</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Московская обл.</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Москва</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Агрономия</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">05</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Московская обл.</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Москва</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Агрономия</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-question-list-item" data-drop-info>
+                <button type="button" class="main-question-list-item__btn">
+                    <span class="main-question-list-item__number">06</span>
+
+                    <span class="main-question-list-item__text">
+                        Название вакансии
+                    </span>
+
+                    <svg>
+                        <use href="#link-icon"></use>
+                    </svg>
+                </button>
+                <div class="main-question-list-item__content">
+                    <div class="main-question-list-item__params">
+                        <div>
+                            <p>Регион</p>
+                            <p>Московская обл.</p>
+                        </div>
+
+                        <div>
+                            <p>Город</p>
+                            <p>Москва</p>
+                        </div>
+
+                        <div>
+                            <p>Профессиональная область</p>
+                            <p>Агрономия</p>
+                        </div>
+                    </div>
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                        quo voluptas nulla pariatur
+                    </p>
+
+                    <ul>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                        <li>veniam, quis nostrum exercitationem</li>
+                    </ul>
+
+                    <p>
+                        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+                        commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="career-new__contacts">
+        <h4 class="main-info__title">
+            Контакты отдела<br>подбора персонала
+        </h4>
+
+        <div>
+            <a href="tel:8 800 6 000 940">8 800 6 000 940</a>
+            <a href="mailto:hr@ruseed.com">hr@ruseed.com</a>
+        </div>
+    </div>
+</section>

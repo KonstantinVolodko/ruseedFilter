@@ -1,0 +1,28 @@
+// @font-face {
+//   font-family: "Rubik";
+//   src: local("Rubik"), local("Rubik-Regular"), url("../fonts/Rubik.woff2") format("woff2"),
+//     url("../fonts/Rubik.woff") format("woff"), url("../fonts/Rubik.ttf") format("truetype");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Milligram";
+  src: local("Milligram"), local("Milligram-Regular"), url("../fonts/MilligramText-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Milligram";
+  src: local("Milligram"), local("Milligram-Medium"), url("../fonts/MilligramText-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Milligram";
+  src: local("Milligram"), local("Milligram-Bold"), url("../fonts/MilligramText-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,58 @@
+.news {
+    .article-text {
+
+        h1 {
+            font-size: 5.2rem;
+
+            @include breakpoint($sm-bp) {
+                font-size: 3.6rem;
+            }
+        }
+
+        p:first-of-type {
+            color: #C2C2C2;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 113.5%;
+
+            @include breakpoint($sm-bp) {
+                font-size: 1.4rem;
+            }
+        }
+
+        p:nth-of-type(odd) {
+            font-weight: 400;
+        }
+    }
+}
+
+.news-swiper {
+    width: 100%;
+}
+
+.news-navigation {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: end;
+
+    .swiper-button-disabled {
+        opacity: 0.6;
+    }
+
+    svg {
+        position: unset;
+        width: 3.6rem;
+        height: 3.6rem;
+
+        @include breakpoint($xl-bp) {
+            display: block;
+        }
+    }
+
+    button:first-child {
+        svg {
+            rotate: 180deg;
+        }
+    }
+}

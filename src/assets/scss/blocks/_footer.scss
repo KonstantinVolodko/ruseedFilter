@@ -1,0 +1,178 @@
+.footer {
+  margin-top: auto;
+  background: url("../images/footer-bg.svg") center right / 37.6rem 110% no-repeat, $green;
+  padding: 3.8rem 0rem 4rem;
+
+  @include breakpoint($xl-bp) {
+    background: url("../images/footer-bg.svg") bottom left / 25rem no-repeat, $green;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: 4rem 0rem 1rem;
+    background: url("../images/footer-bg.svg") calc(100% - 1.5rem) 100% / 19.4rem 14.4rem no-repeat, $green;
+  }
+
+  &__container {
+    padding: 0rem 8rem 0rem 22.5rem;
+    display: grid;
+    column-gap: 10.5rem;
+    width: fit-content;
+
+    @include breakpoint($xl-bp) {
+      padding: 0rem 1.5rem;
+      gap: 6rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+    }
+  }
+
+  &__logo {
+    grid-area: 1/1/2/2;
+    width: 27.6rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 4rem;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: $light;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3rem;
+    grid-area: 1/2/3/3;
+
+    @include breakpoint($sm-bp) {
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    &__link {
+      font-size: 2.4rem;
+      line-height: 2.6rem;
+      color: $light;
+      transition: 0.3s;
+
+      @include breakpoint($sm-bp) {
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    grid-area: 1/3/3/4;
+
+    @include breakpoint($sm-bp) {
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    &__link {
+      font-size: 3.6rem;
+      line-height: 4rem;
+      color: $light;
+      transition: 0.3s;
+
+      @include breakpoint($sm-bp) {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &__text {
+      max-width: 30rem;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      color: $light;
+    }
+  }
+
+  &-legal {
+    grid-area: 2/1/3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+
+    @include breakpoint($sm-bp) {
+      flex-direction: column-reverse;
+      gap: 4.3rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      max-width: 40rem;
+
+      @include breakpoint($xl-bp) {
+        max-width: 30rem;
+      }
+
+      @include breakpoint($sm-bp) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-soucial {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    @include breakpoint($sm-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    &__link {
+      width: 3.2rem;
+      height: 3.2rem;
+      transition: 0.3s;
+
+      &:hover {
+        svg {
+          fill: $light;
+        }
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: $black;
+      }
+    }
+  }
+}

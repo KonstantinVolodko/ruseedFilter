@@ -1,0 +1,71 @@
+@import "./vars";
+
+html {
+  background-color: $light;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 500;
+  font-family: "Milligram";
+  color: $black;
+}
+
+span {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.default-link {
+  display: inline-block;
+  width: fit-content;
+  min-width: 30rem;
+  padding: 1.4rem 2.5rem;
+  border: 0.1rem solid $green;
+  background-color: $green;
+  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  text-align: center;
+  color: $white;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: transparent;
+    color: $green;
+  }
+
+  &.default-link_white {
+    border: 0.1rem solid $white;
+    background-color: $white;
+    color: $green;
+
+    &:hover {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+}

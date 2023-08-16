@@ -1,0 +1,91 @@
+.shop {
+  &-top {
+    background: linear-gradient(
+        90deg,
+        rgba(60, 49, 32, 0.8) 34.69%,
+        rgba(43, 35, 23, 0.355551) 62.03%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url("../images/shop-top.jpg") center / cover no-repeat;
+  }
+
+  &-form {
+    padding: 0;
+    border: none;
+
+    &-container {
+      padding: 19.3rem 22.5rem 18rem;
+      // margin: 19.3rem 0rem 18rem;
+
+      @include breakpoint($xl-bp) {
+        padding: 10rem 1.5rem;
+        // margin: 10rem 0rem;
+      }
+    }
+  }
+
+  &-region {
+    margin-bottom: 18rem;
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 10rem;
+    }
+  }
+
+  &-contacts {
+    padding: 0rem 10rem 0rem 22.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8rem;
+    row-gap: 10rem;
+    margin-bottom: 18rem;
+
+    @include breakpoint($xl-bp) {
+      padding: 0rem 1.5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 10rem;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      @include breakpoint($sm-bp) {
+        gap: 1.5rem;
+      }
+
+      &__img {
+        width: 13.5rem;
+        height: 13.5rem;
+        border-radius: 50%;
+        background-color: rgba(226, 226, 226, 1);
+        flex: none;
+
+        @include breakpoint($sm-bp) {
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+
+      &__text {
+        @include text;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint($sm-bp) {
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+        }
+      }
+    }
+  }
+}
