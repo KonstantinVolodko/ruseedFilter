@@ -700,23 +700,25 @@ document.addEventListener("DOMContentLoaded", function () {
     initializeCustomSelect(container);
   });
   var filterButton = document.querySelector('#filter-btn');
-  filterButton.addEventListener('click', function () {
-    var selectedCountry = document.querySelector('#country-select').value;
-    var selectedCity = document.querySelector('#city-select').value;
-    var selectedProfession = document.querySelector('#profession-select').value;
-    console.log(selectedCountry, selectedCity, selectedProfession);
-    var questionItems = document.querySelectorAll('.main-question-list-item');
-    questionItems.forEach(function (item) {
-      var paramsDiv = item.querySelector('.main-question-list-item__params');
-      var countryParam = paramsDiv.querySelectorAll('div')[0].querySelector('p:last-of-type').textContent;
-      var cityParam = paramsDiv.querySelectorAll('div')[1].querySelector('p:last-of-type').textContent;
-      var professionParam = paramsDiv.querySelectorAll('div')[2].querySelector('p:last-of-type').textContent;
-      console.log(paramsDiv, countryParam, cityParam, professionParam);
-      if ((selectedCountry === '' || selectedCountry === 'Все регионы' || countryParam === selectedCountry) && (selectedCity === '' || selectedCity === 'Все города' || cityParam === selectedCity) && (selectedProfession === '' || selectedProfession === 'Все профессии' || professionParam === selectedProfession)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+  if ( filterButton ) {
+    filterButton.addEventListener('click', function () {
+      var selectedCountry = document.querySelector('#country-select').value;
+      var selectedCity = document.querySelector('#city-select').value;
+      var selectedProfession = document.querySelector('#profession-select').value;
+      console.log(selectedCountry, selectedCity, selectedProfession);
+      var questionItems = document.querySelectorAll('.main-question-list-item');
+      questionItems.forEach(function (item) {
+        var paramsDiv = item.querySelector('.main-question-list-item__params');
+        var countryParam = paramsDiv.querySelectorAll('div')[0].querySelector('p:last-of-type').textContent;
+        var cityParam = paramsDiv.querySelectorAll('div')[1].querySelector('p:last-of-type').textContent;
+        var professionParam = paramsDiv.querySelectorAll('div')[2].querySelector('p:last-of-type').textContent;
+        console.log(paramsDiv, countryParam, cityParam, professionParam);
+        if ((selectedCountry === '' || selectedCountry === 'Все регионы' || countryParam === selectedCountry) && (selectedCity === '' || selectedCity === 'Все города' || cityParam === selectedCity) && (selectedProfession === '' || selectedProfession === 'Все профессии' || professionParam === selectedProfession)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
-  });
+  }
 });
