@@ -731,13 +731,13 @@ svg {
     }
 }
 
-.header-nav-links__link:first-child {
+.header-nav-links__link._active {
     color: rgb(94, 166, 85);
 }
 
 @media (max-width: 1024px) {
-    .header-nav-links__link:first-child {
-        color: rgb(255, 255, 255);
+    .header-nav-links__link._active {
+        color: rgb(0, 0, 0);
     }
 }
 
