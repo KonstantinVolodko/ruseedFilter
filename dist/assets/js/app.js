@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }]);
     return InfoDropItem;
   }();
-  var Cookie = /*#__PURE__*/function () {
+  /*var Cookie = function () {
     function Cookie(container) {
       _classCallCheck(this, Cookie);
       this.container = container;
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var cookie = document.querySelector(".cookie");
   if (cookie) {
     new Cookie(cookie);
-  }
+  }*/
 
   // const selectList = document.querySelectorAll(".select");
   // selectList.forEach(item => new Select(item));
